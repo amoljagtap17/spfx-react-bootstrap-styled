@@ -1,13 +1,25 @@
-import * as React from "react";
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import { GlobalStyle, Main } from "./shared";
+import { Navbar } from "./features";
 
 const ReactApp = () => (
   <>
     <GlobalStyle />
     <Main>
-      <h1>Hello World!!</h1>
-      <p>Welcome to this App!</p>
+      <Router>
+        <Container fluid>
+          <Row noGutters>
+            <Col>
+              <Navbar />
+            </Col>
+          </Row>
+        </Container>
+      </Router>
     </Main>
   </>
 );
