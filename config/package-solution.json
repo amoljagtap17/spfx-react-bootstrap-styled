@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-react-bootstrap-styled-client-side-solution",
+    "id": "daab03a3-7d3c-4fc0-a2cc-059b9d73c819",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-react-bootstrap-styled.sppkg"
+  }
+}
