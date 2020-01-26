@@ -6,6 +6,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import { GlobalStyle, Main } from "./shared";
 import { Navbar, SearchPanel } from "./features";
+import { HomePage } from "./pages";
 
 const ReactApp = () => (
   <>
@@ -23,6 +24,14 @@ const ReactApp = () => (
               <SearchPanel />
             </Col>
           </Row>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/dashboards/types/:typeId">
+              <h1>Home Route</h1>
+            </Route>
+          </Switch>
         </Container>
       </Router>
     </Main>

@@ -9,6 +9,8 @@ const logo: any = require("../../../assets/images/logo512.png");
 const StyledNavbar = styled(Navbar)`
   height: 100px;
   z-index: 3000;
+  padding-bottom: 0;
+  padding-top: 0;
 `;
 
 export default () => {
